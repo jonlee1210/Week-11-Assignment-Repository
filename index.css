@@ -1,0 +1,57 @@
+
+
+/* Center the main content */
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: silver;
+    border: 2px solid navy;
+    text-align: center; /* Center the grid content */
+}
+
+/* Style for each cell in the game board */
+.cell {
+    /* Keep the existing styles */
+    border: 1px solid navy;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+    background-color: white;
+    color: navy;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box; /* Add this to include padding and border in the width and height */
+}
+
+
+/* Style for the winner alert */
+.alert {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 20px; /* Add margin at the bottom */
+    background-color: navy; /* Change background color */
+    color: white; /* Change text color */
+    border: 1px solid navy;
+    width: 100%;
+}
+
+/* Style for the alternating turn header */
+#turnHeader {
+    margin-top: 20px;
+    font-size: 24px;
+    color: navy;
+}
